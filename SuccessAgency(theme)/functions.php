@@ -10,7 +10,7 @@ function success_child_styles()
 function add_success_cpt_query($query)
 {
     if (is_home() && $query->is_main_query()) {
-        $query->set('post_type', array('post', 'success', 'book'));
+        $query->set('post_type', array('post', 'book'));
         return $query;
     }
 
